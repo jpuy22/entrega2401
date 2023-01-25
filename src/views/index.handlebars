@@ -1,6 +1,15 @@
 <div>
     <h1>
-        HOla, {{name}}, welcome to the jungle!!
+        Lista de todos los productos:<br>   
+            {{#each products}}
+                <div>
+                    <p> 
+                        {{this.name}} 
+                        $ {{this.price}}
+                    </p>
+                </div>
+            {{/each}}
+
     </h1>
 
 </div>
